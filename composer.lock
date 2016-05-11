@@ -1,0 +1,60 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "a3e37afe761abe8817db0c801b0aa392",
+    "content-hash": "6be0986d98e33fcbbfae36d29dca613c",
+    "packages": [
+        {
+            "name": "system/threading",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "system/threading",
+                "reference": "8e0767a7ac39a9c85bc26d31d07a169c5a9c62e1",
+                "shasum": null
+            },
+            "require": {
+                "php": "7.*.*"
+            },
+            "type": "metapackage",
+            "autoload": {
+                "psr-4": {
+                    "Threading\\": "system/threading/class"
+                }
+            }
+        },
+        {
+            "name": "system/threading-fhreads",
+            "version": "1.0.0",
+            "dist": {
+                "type": "path",
+                "url": "system/threading-fhreads",
+                "reference": "9b90234c24c52d1a711f06423a1844ba232b4e79",
+                "shasum": null
+            },
+            "require": {
+                "php": "7.*.*",
+                "system/threading": "1.*.*"
+            },
+            "type": "metapackage",
+            "autoload": {
+                "psr-4": {
+                    "Threading\\Fhreads\\": "system/threading-fhreads/class"
+                }
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "7.*.*"
+    },
+    "platform-dev": []
+}

@@ -1,0 +1,17 @@
+{
+    "name"    : "system/threading",
+    "type"    : "metapackage",
+    "version" : "1.0.0",
+    "require" :
+    {
+        "php" : "7.*.*"
+    },
+
+    "autoload" :
+    {
+        "psr-4" :
+        {
+            "Threading\\" : "system/threading/class"
+        }
+    }
+}

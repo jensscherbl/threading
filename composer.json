@@ -1,0 +1,22 @@
+{
+    "require" :
+    {
+        "php"                      : "7.*.*",
+        "system/threading"         : "1.*.*",
+        "system/threading-fhreads" : "1.*.*"
+    },
+    "repositories" :
+    [
+        {
+            "type" : "path",
+            "url"  : "system/*"
+        }
+    ],
+    "autoload" :
+    {
+        "psr-4" :
+        {
+            "Example\\" : "class"
+        }
+    }
+}
