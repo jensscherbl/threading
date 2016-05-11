@@ -5,7 +5,7 @@ use \Threading\Fhreads\WorkerFactory;
 
 require 'vendor/autoload.php';
 
-$worker = (new Workerfactory)->create();
+$worker = (new WorkerFactory)->create();
 $worker->start();
 
 foreach (range(1,999) as $index) {

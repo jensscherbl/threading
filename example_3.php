@@ -5,7 +5,7 @@ use \Threading\Fhreads\PoolFactory;
 
 require 'vendor/autoload.php';
 
-$pool = (new Poolfactory)->create(8);
+$pool = (new PoolFactory)->create(8);
 $pool->start();
 
 foreach (range(1,999) as $index) {
