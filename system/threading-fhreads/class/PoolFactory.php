@@ -15,19 +15,6 @@ final class PoolFactory implements \Threading\PoolFactory
      */
     public function create(int $size): Pool
     {
-        $workers = [];
-
-        foreach (range(1, $size) as $index) {
-
-            $workers[] = new Worker(
-                new Thread,
-                new TaskQueue(
-                    new QueueState,
-                    new QueueStore
-                )
-            );
-        }
-
         return new Pool(
             new Worker(
                 new Thread,
