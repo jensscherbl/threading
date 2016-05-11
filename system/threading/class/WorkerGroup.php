@@ -110,7 +110,7 @@ final class WorkerGroup
 
         // Blocks until a worker is available.
 
-        $worker = ($this->queue)->shift($task);
+        $worker = ($this->queue)->shift();
 
         // Pushes the task to the worker's queue.
 
