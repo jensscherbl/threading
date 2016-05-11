@@ -20,8 +20,6 @@ foreach (range(1,999) as $index) {
 
         echo 'Task ' . $index . '.' . PHP_EOL;
     });
-
-    echo 'Task ' . $index . ' assigned.' . PHP_EOL;
 }
 
 echo 'All assigned.' . PHP_EOL;
